@@ -1,0 +1,48 @@
+{
+  "name": "checkout-fraud-detector-skill",
+  "version": "1.0.0",
+  "description": "Calculates fraud risk score at checkout based on location mismatch, cart values, and shipping speed requests.",
+  "author": "alphaparkinc",
+  "category": "security",
+  "tags": [
+    "fraud",
+    "security",
+    "checkout",
+    "risk-assessment",
+    "compliance"
+  ],
+  "inputs": {
+    "shipping_country": {
+      "type": "string",
+      "description": "Shipping address ISO country code."
+    },
+    "billing_country": {
+      "type": "string",
+      "description": "Billing address ISO country code."
+    },
+    "ip_country": {
+      "type": "string",
+      "description": "Customer IP geo-located country code."
+    },
+    "order_amount_usd": {
+      "type": "number",
+      "description": "Total checkout value in USD."
+    }
+  },
+  "outputs": {
+    "fraud_score": {
+      "type": "integer",
+      "description": "Risk score from 0 (low) to 100 (critical)."
+    },
+    "status": {
+      "type": "string",
+      "description": "approved / flagged / declined."
+    },
+    "reasons": {
+      "type": "array",
+      "description": "Specific triggered risk flag details."
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
