@@ -1,4 +1,4 @@
-# checkout-fraud-detector-skill
+# genpark-checkout-fraud-detector-skill
 
 > **GenPark AI Agent Skill** -- Real-time checkout fraud auditing gateway.
 
