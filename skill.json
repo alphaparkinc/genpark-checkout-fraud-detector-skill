@@ -1,8 +1,8 @@
 {
   "name": "checkout-fraud-detector-skill",
   "version": "1.0.0",
-  "description": "Calculates fraud risk score at checkout based on location mismatch, cart values, and shipping speed requests.",
-  "author": "alphaparkinc",
+  "description": "GenPark AI Agent Skill - Calculates fraud risk score at checkout based on location mismatch, cart values, and shipping speed requests.",
+  "author": "genpark",
   "category": "security",
   "tags": [
     "fraud",
